@@ -1,0 +1,1008 @@
+{
+  "access_log_file": "data_access_log.csv",
+  "amendment_ids": [],
+  "blueprint_sha256": "2738247fc12f05bd1dd2cd0d85477bbd955d1b549593e732682538b9fc37e64e",
+  "blueprint_version": "3.3",
+  "code_hash_method": "SHA256(UTF8(core_source + newline + workflow_source)); source files included",
+  "code_sha256": "8e8b168fdc81dd35beebdd1d6819ba96b3f1d7c5b47695aa9390275c8c1e44bc",
+  "config_sha256": "d3a9b41a929c12d9895cd41212ccd44400141939c6289d2f1a8325dc00f4355f",
+  "created_utc": "2026-10-15T10:24:08.933194+00:00",
+  "environment_file": "environment_snapshot.json",
+  "exclusions": "No raw images/masks, original archives, trained checkpoints, stage cache, self hash, or outer ZIP in output_artifacts",
+  "gate_results": [
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Researcher/adviser approval",
+      "evidence_ref": "phase01_manifest.json; statistical_design.json; model_roster.json; field_data_decision.md",
+      "failure_action": "Resolve evidence; no invented approvals",
+      "gate_id": "G01",
+      "missing_prerequisites": "S1/S5/S6 review; actual dataset evidence",
+      "phase": "01",
+      "requirement": "Source provenance, exact statistical route, roster/fallbacks and field route recorded",
+      "signed_at": null,
+      "status": "PENDING_APPROVAL",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Researcher/adviser"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Curator approval and source permission",
+      "evidence_ref": "Phase02 audit/data card",
+      "failure_action": "Quarantine/rebuild/acquire",
+      "gate_id": "G02",
+      "missing_prerequisites": "Phase02 decoded/perceptual/parent audit; source rights",
+      "phase": "02",
+      "requirement": "Independent units, grouped leakage audit, label validity and source permissions",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Curator + researcher"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "S2 sampling approval",
+      "evidence_ref": "sample_size_feasibility.csv; future sampling plan",
+      "failure_action": "Acquire units or approved pre-calibration alternative; no test borrowing",
+      "gate_id": "G03",
+      "missing_prerequisites": "Actual independent counts and S2",
+      "phase": "02",
+      "requirement": "At least120 positive/122 negative independent calibration units; actual fixed N before outcomes",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Script + adviser"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "S5 roster/training freeze",
+      "evidence_ref": "Future development metrics and checkpoint registry",
+      "failure_action": "Repair or declared technical fallback; record negative feasibility",
+      "gate_id": "G04",
+      "missing_prerequisites": "Training permission, technical smoke, Phase02 groups",
+      "phase": "03",
+      "requirement": "At least one frozen engine meets development IoU .56 / hard-negative .35 heuristic",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Script + researcher"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "S3 metric review",
+      "evidence_ref": "Future synthetic graph/score tests",
+      "failure_action": "Fix and invalidate dependent caches",
+      "gate_id": "G05",
+      "missing_prerequisites": "Phase04 metrics and no-GT tests",
+      "phase": "04",
+      "requirement": "Metric edge cases and inference-only observability validated",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Signed preregistration",
+      "evidence_ref": "Future preregistration hashes/access log",
+      "failure_action": "Remain in development",
+      "gate_id": "G06",
+      "missing_prerequisites": "S1–S7 relevant decisions and complete freeze",
+      "phase": "05",
+      "requirement": "Model, scores/CDF, policies, losses, N and analysis frozen independently of calibration",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Researcher"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Independent mathematical/code sign-off",
+      "evidence_ref": "statistical_self_tests.json + future Phase05/06 reviewed proof/code tests",
+      "failure_action": "BLOCK FINAL CALIBRATION until corrected and signed",
+      "gate_id": "G07",
+      "missing_prerequisites": "Sampler audit, frozen Phase05 code and independent sign-off",
+      "phase": "05→06",
+      "requirement": "26 exact bounds; accepted denominators; valid sampler; sentinel; no monotone conditional risk or optional stopping",
+      "signed_at": null,
+      "status": "PENDING_APPROVAL",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Independent technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Review evidence and access log",
+      "evidence_ref": "Future selected policy + independent test report",
+      "failure_action": "Report no certification or invalidate contaminated result",
+      "gate_id": "G08",
+      "missing_prerequisites": "G02/G03/G05/G06/G07 and policy-freeze marker",
+      "phase": "06",
+      "requirement": "Frozen internal certification/test; complete positive or negative result",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Researcher + script"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Shift-claim reviewer",
+      "evidence_ref": "Future shift diagnostics and claims ledger",
+      "failure_action": "Keep empirical/negative result; no unsupported guarantees",
+      "gate_id": "G09",
+      "missing_prerequisites": "Source audit, frozen target fitting, S4 and route tests",
+      "phase": "07",
+      "requirement": "External/HN/route testing; weighted claims scoped by theorem assumptions",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Researcher/adviser"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Final manuscript/release approval",
+      "evidence_ref": "Final manifests and claims ledger",
+      "failure_action": "Narrow claims or delay release",
+      "gate_id": "G10",
+      "missing_prerequisites": "Phases02–08 assets and verified central claims",
+      "phase": "08",
+      "requirement": "Reproducible population-specific publication claims",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Hash/schema checks plus named evidence review; generated report is not sign-off",
+      "verifier": "Researcher/adviser"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Legal/technical review before training",
+      "evidence_ref": "model_checks/unetpp_effb3.json",
+      "failure_action": "none; investigate recipe/implementation; accuracy is not a fallback trigger",
+      "gate_id": "M01_unetpp_effb3",
+      "missing_prerequisites": "Any unverified source/license/weights/448-shape/recipe compatibility; S5 approval",
+      "phase": "01→03",
+      "requirement": "Pinned implementation, code/weights permission, canonical-shape forward/backward/reload and resource fit",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Isolated synthetic model smoke plus license/recipe review",
+      "verifier": "Researcher + technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Legal/technical review before training",
+      "evidence_ref": "model_checks/scsegamba.json",
+      "failure_action": "segformer_b0; accuracy is not a fallback trigger",
+      "gate_id": "M01_scsegamba",
+      "missing_prerequisites": "Any unverified source/license/weights/448-shape/recipe compatibility; S5 approval",
+      "phase": "01→03",
+      "requirement": "Pinned implementation, code/weights permission, canonical-shape forward/backward/reload and resource fit",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Isolated synthetic model smoke plus license/recipe review",
+      "verifier": "Researcher + technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Legal/technical review before training",
+      "evidence_ref": "model_checks/dmsrcrack.json",
+      "failure_action": "segformer_b0 then unetpp_convnext_tiny if already used; accuracy is not a fallback trigger",
+      "gate_id": "M01_dmsrcrack",
+      "missing_prerequisites": "Any unverified source/license/weights/448-shape/recipe compatibility; S5 approval",
+      "phase": "01→03",
+      "requirement": "Pinned implementation, code/weights permission, canonical-shape forward/backward/reload and resource fit",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Isolated synthetic model smoke plus license/recipe review",
+      "verifier": "Researcher + technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Legal/technical review before training",
+      "evidence_ref": "model_checks/segformer_b0.json",
+      "failure_action": "unetpp_convnext_tiny; accuracy is not a fallback trigger",
+      "gate_id": "M01_segformer_b0",
+      "missing_prerequisites": "Any unverified source/license/weights/448-shape/recipe compatibility; S5 approval",
+      "phase": "01→03",
+      "requirement": "Pinned implementation, code/weights permission, canonical-shape forward/backward/reload and resource fit",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Isolated synthetic model smoke plus license/recipe review",
+      "verifier": "Researcher + technical reviewer"
+    },
+    {
+      "amendment_ref": null,
+      "approval_requirement": "Legal/technical review before training",
+      "evidence_ref": "model_checks/unetpp_convnext_tiny.json",
+      "failure_action": "dated amendment before training if no compatible fallback; accuracy is not a fallback trigger",
+      "gate_id": "M01_unetpp_convnext_tiny",
+      "missing_prerequisites": "Any unverified source/license/weights/448-shape/recipe compatibility; S5 approval",
+      "phase": "01→03",
+      "requirement": "Pinned implementation, code/weights permission, canonical-shape forward/backward/reload and resource fit",
+      "signed_at": null,
+      "status": "NOT_RUN",
+      "verification_method": "Isolated synthetic model smoke plus license/recipe review",
+      "verifier": "Researcher + technical reviewer"
+    }
+  ],
+  "git_commit": null,
+  "input_artifacts": [
+    {
+      "artifact_id": "raw_directory_000",
+      "byte_size": 5562140821,
+      "hash_status": "PASS",
+      "path": "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/CRACK500 CrackTree200 GAPS384",
+      "role": "raw_extracted_folder_manifest",
+      "sha256": "41b1972c02602a09aca89d12030bb351580036b6bfb8a31c46b1c71f563f754d"
+    },
+    {
+      "artifact_id": "raw_directory_001",
+      "byte_size": 11252477,
+      "hash_status": "PASS",
+      "path": "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/CrackForest dataset(CFD)",
+      "role": "raw_extracted_folder_manifest",
+      "sha256": "9a5437b0682cbdf6a5169139208777963393fbd7d9da6366de93237ad90174b9"
+    },
+    {
+      "artifact_id": "raw_directory_002",
+      "byte_size": 118144024,
+      "hash_status": "PASS",
+      "path": "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/DeepCrack",
+      "role": "raw_extracted_folder_manifest",
+      "sha256": "15027bdf5a851197f3c92be44bb4167052034ee96e219ec0f512b51626016991"
+    },
+    {
+      "artifact_id": "raw_directory_003",
+      "byte_size": 530772754,
+      "hash_status": "PASS",
+      "path": "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/SDNET2018",
+      "role": "raw_extracted_folder_manifest",
+      "sha256": "68c7bdc43641a8e2a2b0617ffb04ee0851662148da5adb39848082184c37e19c"
+    },
+    {
+      "artifact_id": "raw_directory_004",
+      "byte_size": 2175501101,
+      "hash_status": "PASS",
+      "path": "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/crack segmentation dataset",
+      "role": "raw_extracted_folder_manifest",
+      "sha256": "dcc5143c8482f95b800f5dc97edb1d17cd4d0b700b109940698827ced028755f"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "artifact_id": "phase01:NEXT_PHASE_INPUTS.md",
+      "byte_size": 8045,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "NEXT_PHASE_INPUTS.md",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "4154d2a726d8691b2bf3b400c9e21ef507e5f9bc6c7070f55f6c02358e33083e"
+    },
+    {
+      "artifact_id": "phase01:archive_expectations.csv",
+      "byte_size": 1041,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "archive_expectations.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "da3bbcca06127c4d058a2664a55448ed6cd038222167be4b6f991f0d91c5202d"
+    },
+    {
+      "artifact_id": "phase01:archive_inventory.csv",
+      "byte_size": 1740,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "archive_inventory.csv",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "6efae9ad3c096f630fd5906fc7d07b8e3de63e2ef260b6afb6b467f94b817981"
+    },
+    {
+      "artifact_id": "phase01:archive_members.csv",
+      "byte_size": 25325785,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "archive_members.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "1a888e084ffcada9bbbf0c00bfb332916399553b331e183bb9711ec56144bbc9"
+    },
+    {
+      "artifact_id": "phase01:archive_overlap_candidates.csv",
+      "byte_size": 19797,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "archive_overlap_candidates.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "3e198ab36cd9369ff5e2207b962b8d00b75a487b21de115e6d4e6ad6a5e75852"
+    },
+    {
+      "artifact_id": "phase01:archive_warnings.csv",
+      "byte_size": 52,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "archive_warnings.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "6c0a778d35be1b2b64467350f5726e68119a3a9c2db3f46abc8eeec08fb089f6"
+    },
+    {
+      "artifact_id": "phase01:blueprint_v3.3.md",
+      "byte_size": 161911,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "blueprint_v3.3.md",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "2738247fc12f05bd1dd2cd0d85477bbd955d1b549593e732682538b9fc37e64e"
+    },
+    {
+      "artifact_id": "phase01:config.json",
+      "byte_size": 880,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "config.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "df26752540f56556febf008a7e89a40dda12e088acf60d353f47b04c2180570b"
+    },
+    {
+      "artifact_id": "phase01:cracksafe_core.zip",
+      "byte_size": 39358,
+      "media_type": "application/zip",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "cracksafe_core.zip",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "c1cd2c886607c7d01a9e2cb11836189261e4fee3eb18be87368440a13a943252"
+    },
+    {
+      "artifact_id": "phase01:data_access_log.csv",
+      "byte_size": 61,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "data_access_log.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "215ce232d50dae6c5ea482a7f646c169ac6ee7db6bbf4efb33a2f6f4c192ee81"
+    },
+    {
+      "artifact_id": "phase01:dataset_discovery.json",
+      "byte_size": 540,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "dataset_discovery.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "a15b5a6472b1803db0ce22af6c3c1452c7faf7cc38a9e2b1a16a5ec9aad7e765"
+    },
+    {
+      "artifact_id": "phase01:decision_gates.csv",
+      "byte_size": 6176,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "decision_gates.csv",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "db6ba73137ed619e618533714544a910fc8062b30384841c25c665702f86eb53"
+    },
+    {
+      "artifact_id": "phase01:environment_snapshot.json",
+      "byte_size": 24435,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "environment_snapshot.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "3cf29b17992d678dfc37dc5aa79f7bdabce10aaf2b2b2645a7bd39bb7df00fcf"
+    },
+    {
+      "artifact_id": "phase01:field_data_decision.md",
+      "byte_size": 965,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "field_data_decision.md",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "e9004fbc47ce586c89715f44892a1add4808115054461bb63db1ca702722f3ae"
+    },
+    {
+      "artifact_id": "phase01:field_evidence_inventory.json",
+      "byte_size": 289,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "field_evidence_inventory.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "acef8885fb9b8f949d22bd09293e53c45056cbd18b2d8253738f9f39b888096a"
+    },
+    {
+      "artifact_id": "phase01:input_fingerprints.json",
+      "byte_size": 33868703,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "input_fingerprints.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "ef0a12f1c068f5dd05f39d5477fa354c76a4df72271a302ec2d8cf0345f30dd4"
+    },
+    {
+      "artifact_id": "phase01:legacy_baseline_record.md",
+      "byte_size": 1531,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "legacy_baseline_record.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "1f10d984b3ea4ec436499aa214087b8bcf08c7c3664406643ab80d095466b693"
+    },
+    {
+      "artifact_id": "phase01:legacy_hashes.sha256",
+      "byte_size": 83,
+      "media_type": "application/octet-stream",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "legacy_hashes.sha256",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "022df7667528f67a4fa9bf29a3804290866724bd5950b0bdff139e3f9a1ac83b"
+    },
+    {
+      "artifact_id": "phase01:legacy_manifest.json",
+      "byte_size": 1487,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "legacy_manifest.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "7e6fb638e9d3ec7eace53b43ceacac24e35a2f09aab7c67bc9838a50d8d43d8a"
+    },
+    {
+      "artifact_id": "phase01:literature_matrix.csv",
+      "byte_size": 37219,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "literature_matrix.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "42c07b42ea2769724340c241de928b2beea504a8d61c228028660d597654d0f3"
+    },
+    {
+      "artifact_id": "phase01:missing_inputs.csv",
+      "byte_size": 955,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "missing_inputs.csv",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "66796e63e9e34e0eb659dd4293c689531991473079d77cca137446f928bd9b72"
+    },
+    {
+      "artifact_id": "phase01:model_checks/dmsrcrack.json",
+      "byte_size": 153,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_checks/dmsrcrack.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "53a8b34678969ed75a0ca4072aca4e1f70b07f77ebe7eb7dde3a542016edd27c"
+    },
+    {
+      "artifact_id": "phase01:model_checks/scsegamba.json",
+      "byte_size": 153,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_checks/scsegamba.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "a024a3c10fa5c6961af56165bce6d30ae0f7dbaaec3ae890744315828fe85607"
+    },
+    {
+      "artifact_id": "phase01:model_checks/segformer_b0.json",
+      "byte_size": 156,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_checks/segformer_b0.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "f96e0e9abb920b585ada37cc1a7655e4a0a3cfde84c532067e72e975a13bf80b"
+    },
+    {
+      "artifact_id": "phase01:model_checks/unetpp_convnext_tiny.json",
+      "byte_size": 164,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_checks/unetpp_convnext_tiny.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "6d74a52b5541d2b718cb7fc24911df02edc097545de6d2223d5f12e2c0f244f1"
+    },
+    {
+      "artifact_id": "phase01:model_checks/unetpp_effb3.json",
+      "byte_size": 156,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_checks/unetpp_effb3.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "2c0a67e1ef8214e2bcaf47ee268c27ea80534dfa5bca457400b4c91aff5cd577"
+    },
+    {
+      "artifact_id": "phase01:model_roster.json",
+      "byte_size": 8921,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_roster.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "b27dbc4f764684a1ca38c15425efd088082619e0a3d8557ca439b2ddf7ee9bce"
+    },
+    {
+      "artifact_id": "phase01:model_smoke_worker.py",
+      "byte_size": 6361,
+      "media_type": "text/x-python",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "model_smoke_worker.py",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "5a9433353b4078d754894c06f26a7d5db256fab468d05c7e3d7cdf4b4b24349e"
+    },
+    {
+      "artifact_id": "phase01:modern_baseline_repro_check.md",
+      "byte_size": 1770,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "modern_baseline_repro_check.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "194654352765971ce0ab58b08f612b09f8acbb628a1c0f5982b3112b19f2066f"
+    },
+    {
+      "artifact_id": "phase01:novelty_gap.md",
+      "byte_size": 12872,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "novelty_gap.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "a6bdc5a223510be15ae0149ccbfb4900a97797f55a6dae7d5d850acffff6f80f"
+    },
+    {
+      "artifact_id": "phase01:phase01_core.py",
+      "byte_size": 117385,
+      "media_type": "text/x-python",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "phase01_core.py",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "ce7849a91020a9c58682e18c9dbb632fd17fb7b3233056aa71bfb64b9f09d579"
+    },
+    {
+      "artifact_id": "phase01:phase01_manifest.schema.json",
+      "byte_size": 1609,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "phase01_manifest.schema.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "b5d2289834c53da1135999c0fb80f7f0f436692b74b1c401231fe34dea858cc5"
+    },
+    {
+      "artifact_id": "phase01:phase02_contract.json",
+      "byte_size": 3577,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "phase02_contract.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "5b5572cb30248c33cbee4306b4f817cff2d7decd87c7fc352cfefcedaaeeb578"
+    },
+    {
+      "artifact_id": "phase01:phase_status.json",
+      "byte_size": 1004,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "phase_status.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "82ea15aa7768f85d0ed31adf76dd865fc1d7aef09933a380eb3df60d1f439d54"
+    },
+    {
+      "artifact_id": "phase01:planning_power.csv",
+      "byte_size": 10622,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "planning_power.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "1857c0ae4af6eac620285d8145b10b941e0e611d244433e66373f20b851b9c2e"
+    },
+    {
+      "artifact_id": "phase01:prediction_only_topology_design.md",
+      "byte_size": 22826,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "prediction_only_topology_design.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "54647efdf7d6c5f22f6e12dbcb2d5d5573aad81df23abe7c8bf9378bcbaa87f7"
+    },
+    {
+      "artifact_id": "phase01:preliminary_lineage_report.md",
+      "byte_size": 456,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "preliminary_lineage_report.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "28409876a9525f30d714393f68e55933972aee2615725c4698f938648a0a20c9"
+    },
+    {
+      "artifact_id": "phase01:preliminary_lineage_scan.csv",
+      "byte_size": 112,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "preliminary_lineage_scan.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "155f341ea5fea02f86f48ef41a19f4b34007f4f0d3692f58168150988d07b6c9"
+    },
+    {
+      "artifact_id": "phase01:rcps_decision_D2.md",
+      "byte_size": 10529,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "rcps_decision_D2.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "b0753ba21cc919cfb7d1cf0c34cb3a742276d9221e16d4bb72c6484405529b2f"
+    },
+    {
+      "artifact_id": "phase01:reference_rechecks.csv",
+      "byte_size": 2765,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "reference_rechecks.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "7c80082c4e59f8be49e31a1c6a0389619b669f8a4aaeeac3542162e3a7ed92c5"
+    },
+    {
+      "artifact_id": "phase01:reference_register_inherited.md",
+      "byte_size": 10874,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "reference_register_inherited.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "850ca12d69a817e77a8e8f55b2356d43913ca0cc3a3495e103628641b423f327"
+    },
+    {
+      "artifact_id": "phase01:repository_evidence/segformer_b0_licenses.txt",
+      "byte_size": 11418,
+      "media_type": "text/plain",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "repository_evidence/segformer_b0_licenses.txt",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+    },
+    {
+      "artifact_id": "phase01:repository_registry.csv",
+      "byte_size": 2767,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "repository_registry.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "41b954ae065309f6139edf1512b7cd3ca9944b4eb8bdec900f2bbe7615af396d"
+    },
+    {
+      "artifact_id": "phase01:resource_plan.csv",
+      "byte_size": 5541,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "resource_plan.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "f37a97ec537f4d7af7eb38db1763f48671e1921a6d8534b2b1c52a1675f5c41a"
+    },
+    {
+      "artifact_id": "phase01:resource_plan_notes.md",
+      "byte_size": 6960,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "resource_plan_notes.md",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "ea719ab8f2f93aa8d214924fab864e1ee08b80093a6cb767294a29adbc236acc"
+    },
+    {
+      "artifact_id": "phase01:run_identity.json",
+      "byte_size": 365,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "run_identity.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "1e90cfcf78e0a92145837e908b3ce0b5e132c2718f7704fe0f8564bc66594184"
+    },
+    {
+      "artifact_id": "phase01:sample_size_feasibility.csv",
+      "byte_size": 18993,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "sample_size_feasibility.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "2f54eda1324b7a70a808c04f9582958126b7d6cfdb8adb5e3a74b33cf928076e"
+    },
+    {
+      "artifact_id": "phase01:schemas.json",
+      "byte_size": 8044,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "schemas.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "f7d25b29ec7b3763a0c54b860ae1b4b7e71f63978226cb95d2cc6e79f80b8569"
+    },
+    {
+      "artifact_id": "phase01:source_pattern_inventory.csv",
+      "byte_size": 922,
+      "media_type": "text/csv",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "source_pattern_inventory.csv",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "4d5e750cfc6ebaba9899f830e17c334e2d0a0ea204f2e81539ca2143713e6805"
+    },
+    {
+      "artifact_id": "phase01:stage_errors.json",
+      "byte_size": 3,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "stage_errors.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "artifact_id": "phase01:statistical_design.json",
+      "byte_size": 5008,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "statistical_design.json",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "995a94d9d309c5a3188a5bc8087d321a74c3130fb546a54ea7928f68eba4c635"
+    },
+    {
+      "artifact_id": "phase01:statistical_self_tests.json",
+      "byte_size": 2559,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "statistical_self_tests.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "7e19b4784559aac613f279a43aba68d940cd723bfb78640f6fe74660058dd0a4"
+    },
+    {
+      "artifact_id": "phase01:supervisor_decisions.md",
+      "byte_size": 2750,
+      "media_type": "text/markdown",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "supervisor_decisions.md",
+      "required_by": [
+        "02"
+      ],
+      "schema_version": "1.0",
+      "sha256": "b8ea2a7d150e8a520610bdb23046a728f535d2f6f23dcf7355e0c63f90fce5a6"
+    },
+    {
+      "artifact_id": "phase01:verified_references.bib",
+      "byte_size": 10807,
+      "media_type": "text/x-bibtex",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "verified_references.bib",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "563f04959bdf7d6631cc1e2a05a0e7ecdfe039058c204992c4fa9b1a44922d16"
+    },
+    {
+      "artifact_id": "phase01:workflow_source.json",
+      "byte_size": 10278,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "workflow_source.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "e5c7e0348162f1dcb1667ab79a733ad6293ac286cd824483c7a157300c456c8d"
+    },
+    {
+      "artifact_id": "phase01:artifact_catalog.json",
+      "byte_size": 28816,
+      "media_type": "application/json",
+      "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
+      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "relative_path": "artifact_catalog.json",
+      "required_by": [
+        "audit"
+      ],
+      "schema_version": "1.0",
+      "sha256": "77ccb65c6b627d5091db059ccd51043bb23dc618885c5c13d99b8a5f183b5c61"
+    }
+  ],
+  "phase": "01",
+  "phase02_audit_ready": true,
+  "run_id": "20261015T102408933036Z_d3a9b41a",
+  "schema_version": "1.0",
+  "scope": "MSC",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "status": "BLOCKED"
+}

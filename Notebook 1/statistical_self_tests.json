@@ -1,0 +1,106 @@
+{
+  "checks": [
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "26 bounds and Bonferroni budget"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "zero-failure minima"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "80 negatives do not certify 5 percent"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "boundary e=n and n=0"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "zero denominator not risk zero"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "small n retains UCB"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "minima errors=1"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "minima errors=2"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "minima errors=5"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "independent inversion 1/122"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "independent inversion 2/205"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "independent inversion 5/306"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "independent inversion 119/120"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "sentinel undefined risks"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "coverage tie by ID"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "both risks required"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "reject invalid (-1, 5)"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "reject invalid (6, 5)"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "reject invalid (1.2, 5)"
+    },
+    {
+      "evidence_kind": "SYNTHETIC_MATH_ONLY",
+      "status": "PASS",
+      "test": "reject invalid (True, 5)"
+    }
+  ],
+  "evidence_kind": "DETERMINISTIC_SYNTHETIC_MATH_ONLY",
+  "status": "PASS"
+}

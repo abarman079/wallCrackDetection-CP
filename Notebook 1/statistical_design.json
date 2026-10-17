@@ -1,0 +1,182 @@
+{
+  "actual_available_independent_units": null,
+  "actual_calibration_outcomes": null,
+  "assumptions": [
+    "Independent identically distributed observations within class from declared population",
+    "Frozen model, preprocess, temperature, scores/CDF, thresholds, endpoints and acceptance rules independently of calibration",
+    "Accurate complete adjudicated labels and losses",
+    "Single fixed-sample experiment without adaptive retry",
+    "Future class-conditionals match calibration population"
+  ],
+  "blueprint_version": "3.3",
+  "conditional_risk_monotonicity_assumed": false,
+  "delta_cell": 0.0019230769230769232,
+  "delta_total": 0.05,
+  "design_status": "PROPOSED_PENDING_S1_S2_S3_S4_S7; not an approval",
+  "entropy_comparator": {
+    "family": [
+      1.0,
+      0.975,
+      0.95,
+      0.925,
+      0.9,
+      0.875,
+      0.85,
+      0.825,
+      0.8,
+      0.775,
+      0.75,
+      0.725,
+      0.7
+    ],
+    "joint_across_models_or_families": false,
+    "non_null_count": 13,
+    "separate_confidence_budget": 0.05
+  },
+  "formal_scope": "P(selected sentinel OR both selected population risks <= targets) >= .95 under stated fixed-system IID class-conditional assumptions",
+  "hard_available_calibration_floor": {
+    "negative": 122,
+    "positive": 120
+  },
+  "mathematical_signoff_gate": "G07; Phase05 to Phase06; independent technical review not granted here",
+  "non_null_policy_count": 13,
+  "observation_unit": "One label-blind representative from each independently justified acquisition unit; correlated crops are not independent observations",
+  "policies": [
+    {
+      "force_review_all": false,
+      "policy_id": "lambda00",
+      "tau_base": 1.0,
+      "tau_topo": 1.0
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda01",
+      "tau_base": 1.0,
+      "tau_topo": 0.95
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda02",
+      "tau_base": 0.95,
+      "tau_topo": 0.95
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda03",
+      "tau_base": 0.95,
+      "tau_topo": 0.9
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda04",
+      "tau_base": 0.9,
+      "tau_topo": 0.9
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda05",
+      "tau_base": 0.9,
+      "tau_topo": 0.85
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda06",
+      "tau_base": 0.85,
+      "tau_topo": 0.85
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda07",
+      "tau_base": 0.85,
+      "tau_topo": 0.8
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda08",
+      "tau_base": 0.8,
+      "tau_topo": 0.8
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda09",
+      "tau_base": 0.8,
+      "tau_topo": 0.75
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda10",
+      "tau_base": 0.75,
+      "tau_topo": 0.75
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda11",
+      "tau_base": 0.75,
+      "tau_topo": 0.7
+    },
+    {
+      "force_review_all": false,
+      "policy_id": "lambda12",
+      "tau_base": 0.7,
+      "tau_topo": 0.7
+    },
+    {
+      "force_review_all": true,
+      "policy_id": "lambda13",
+      "tau_base": 0.0,
+      "tau_topo": 0.0
+    }
+  ],
+  "preferred_available_calibration_target": {
+    "negative": 300,
+    "positive": 300
+  },
+  "primary_OOD_rejection_enabled": false,
+  "primary_targets": {
+    "alpha_false": 0.05,
+    "alpha_miss": 0.1
+  },
+  "procedure": "Finite-family exact one-sided binomial bounds; LTT-compatible",
+  "quality_review_enabled": true,
+  "review_all": {
+    "coverage": 0,
+    "policy_id": "lambda13",
+    "risk_false": null,
+    "risk_miss": null,
+    "ucb_false": null,
+    "ucb_miss": null
+  },
+  "risk_count": 2,
+  "risk_definitions": {
+    "false": "P(N_valid >= 1 | accepted, confirmed no-crack)",
+    "miss": "P(LWBR < 0.90 | accepted, true crack-positive)"
+  },
+  "sample_freeze": "Fixed N and acquisition stopping rule before calibration outcomes; no outcome-triggered reserve additions",
+  "schema_version": "1.0",
+  "selection": "Both bounds PASS; maximum empirical overall coverage, tie smallest policy ID; else lambda13",
+  "shift": {
+    "ESS_fraction_warning": 0.3,
+    "default": "EMPIRICAL_EXTERNAL_ONLY",
+    "diagnostics_establish_guarantee": false,
+    "domain_AUC_warning": 0.85
+  },
+  "simultaneous_bounds": 26,
+  "single_policy_alternative": {
+    "delta_cell": 0.025,
+    "status": "NOT_ACTIVATED; S2 before any calibration outcomes only",
+    "zero_failure_min_negative": 72,
+    "zero_failure_min_positive": 36
+  },
+  "threshold_equality": "ACCEPT",
+  "upper_bound": "1 when n=0 or e=n; BetaQuantile(1-d;e+1,n-e) otherwise; zero-failure stable -expm1(log(d)/n)",
+  "zero_accepted_display": {
+    "computational_ucb": 1,
+    "risk": null,
+    "status": "NOT_CERTIFIABLE",
+    "ucb": null
+  },
+  "zero_failure_accepted_minimum": {
+    "negative": 122,
+    "positive": 60
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "access_barrier": "Phase02 may curate/assign sealed final roles and audit labels as curator, but must not train/evaluate/tune a final-test model or expose final-test labels to development code.",
+  "blocks_audit": [
+    "Unreadable/missing control bundle or invalid hashes/schema/version",
+    "No raw ZIPs or extracted source folders identified and hashed",
+    "Missing exact statistical/source contract or unresolved software failure affecting audit inputs"
+  ],
+  "blocks_phase02_exit": [
+    "Source rights/annotation credibility unresolved",
+    "Cross-split duplicate/parent dependence unresolved",
+    "Actual independent calibration counts or S2 population/unit/count approval unresolved"
+  ],
+  "blueprint_version": "3.3",
+  "calibration_floor": {
+    "negative": 122,
+    "positive": 120
+  },
+  "critical_artifacts": [
+    "blueprint_v3.3.md",
+    "config.json",
+    "statistical_design.json",
+    "model_roster.json",
+    "field_data_decision.md",
+    "decision_gates.csv",
+    "supervisor_decisions.md",
+    "archive_inventory.csv",
+    "dataset_discovery.json",
+    "legacy_manifest.json",
+    "missing_inputs.csv",
+    "schemas.json",
+    "cracksafe_core.zip"
+  ],
+  "independent_unit_rule": "Group by highest dependence level (site/session/parent/original). Choose one label-blind representative per defensible certification unit; audit whether units are actually IID within class.",
+  "next_notebook": "CrackSAFE_CP_Phase02_Data_Leakage_Splits_Annotation.ipynb",
+  "pending_allowed_for_audit": [
+    "Missing legacy checkpoints/configuration",
+    "Unfinished model GPU smoke or model permission decision",
+    "S3/S4/S5/S7 later-stage approvals; no claim they are waived"
+  ],
+  "preferred_target_per_class": 300,
+  "required_inputs": [
+    "canonical Phase01 control ZIP",
+    "matching ZIP SHA-256 sidecar",
+    "same raw dataset version with matching ZIP SHA256 or extracted-directory SHA256 tree hashes"
+  ],
+  "sample_registry_minimum": [
+    "sample_id",
+    "source_id",
+    "archive_ref",
+    "member_path",
+    "decoded_hash",
+    "image_hash",
+    "mask_hash",
+    "parent_id",
+    "site_id",
+    "session_id",
+    "split_group_id",
+    "certification_unit_id",
+    "role",
+    "true_class",
+    "mask_status",
+    "native_shape",
+    "eval_shape",
+    "license_status",
+    "legacy_exposure_status",
+    "exclusion_reason"
+  ],
+  "schema_version": "1.0",
+  "sequence": [
+    "Discover mounted control ZIP and sidecar; reject ambiguity rather than guess latest",
+    "Verify ZIP fingerprint before safe extraction; validate paths, sizes and internal hashes",
+    "Verify phase01_manifest schema/version and critical artifact hashes",
+    "Resolve raw mounts by ZIP SHA256 or extracted-directory member/tree SHA256; no silent source substitution",
+    "Read warnings, exclusions, source/permission ledgers and unresolved decisions",
+    "Inventory pairs, decode validation, exact/decoded/perceptual hashes and source aggregation overlap",
+    "Recover site/session/parent lineage; quarantine ambiguity; adjudicate masks and confirmed negatives",
+    "Count independent units, choose population and fixed count plan with S2 review",
+    "Create grouped partitions and label-blind representatives; freeze split/access manifests; no final calibration",
+    "Export Phase02 artifacts, gates and next handoff"
+  ],
+  "split_schema_minimum": [
+    "sample_id",
+    "unit_id",
+    "group_id",
+    "source_id",
+    "image_ref",
+    "mask_ref_or_sealed_label_ref",
+    "true_class_for_curator",
+    "selection_seed",
+    "role",
+    "split_version"
+  ]
+}

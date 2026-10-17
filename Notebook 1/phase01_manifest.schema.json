@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "blueprint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "blueprint_version": {
+      "const": "3.3"
+    },
+    "code_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "output_artifacts": {
+      "items": {
+        "properties": {
+          "byte_size": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "relative_path",
+          "sha256",
+          "byte_size",
+          "media_type",
+          "schema_version",
+          "producing_run_id",
+          "required_by",
+          "privacy/license_status"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "phase": {
+      "const": "01"
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "BLOCKED",
+        "COMPLETE_NEGATIVE"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "blueprint_version",
+    "blueprint_sha256",
+    "phase",
+    "run_id",
+    "created_utc",
+    "status",
+    "scope",
+    "config_sha256",
+    "code_sha256",
+    "git_commit",
+    "seeds",
+    "input_artifacts",
+    "output_artifacts",
+    "gate_results",
+    "amendment_ids",
+    "environment_file",
+    "access_log_file"
+  ],
+  "type": "object"
+}
