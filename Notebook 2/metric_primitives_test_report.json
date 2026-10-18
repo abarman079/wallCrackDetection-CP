@@ -1,0 +1,53 @@
+{
+  "GT_component_pruning": false,
+  "Phase04_branch_LWBR_engine": "NOT_IMPLEMENTED_IN_PHASE02",
+  "locks": {
+    "LWBR_failure_threshold": 0.9,
+    "branch_coverage_threshold": 0.75,
+    "branch_matching_tolerance": 4,
+    "minimum_predicted_component_area": 20,
+    "minimum_predicted_skeleton_pixels": 5,
+    "probability_threshold": 0.55,
+    "size": 448
+  },
+  "scope": "Minimal binary/letterbox/component/skeleton/clDice primitives only",
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "448_aspect_valid_padding",
+      "status": "PASS"
+    },
+    {
+      "name": "nearest_binary_mask",
+      "status": "PASS"
+    },
+    {
+      "name": "cldice_identical",
+      "status": "PASS"
+    },
+    {
+      "name": "empty_empty_defined",
+      "status": "PASS"
+    },
+    {
+      "name": "one_empty_defined",
+      "status": "PASS"
+    },
+    {
+      "name": "small_GT_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "8_connected",
+      "status": "PASS"
+    },
+    {
+      "name": "threshold_equality_and_component",
+      "status": "PASS"
+    },
+    {
+      "name": "padding_excluded",
+      "status": "PASS"
+    }
+  ]
+}

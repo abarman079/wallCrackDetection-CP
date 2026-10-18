@@ -46,3 +46,6 @@ Thumbs.db
 .vscode/
 .env
 .env.*
+
+# Phase-02 private archives
+Notebook 2/*.zip.sha256
