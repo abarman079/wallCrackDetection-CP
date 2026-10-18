@@ -49,3 +49,7 @@ Thumbs.db
 
 # Phase-02 private archives
 Notebook 2/*.zip.sha256
+
+# Workstation-only immutable run archives and private curator evidence
+/local_artifacts/
+*.zip.bin
