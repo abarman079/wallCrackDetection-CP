@@ -1,0 +1,6 @@
+item,status,reason,blocks,required_action
+legacy_split_manifest,MISSING_INPUT,No original evidence found,Frozen checkpoint / exact recipe reconstruction only,Attach actual file later; historical-only reporting remains allowed
+legacy_checkpoint,MISSING_INPUT,No original evidence found,Frozen checkpoint / exact recipe reconstruction only,Attach actual file later; historical-only reporting remains allowed
+legacy_configuration,MISSING_INPUT,No original evidence found,Frozen checkpoint / exact recipe reconstruction only,Attach actual file later; historical-only reporting remains allowed
+legacy_metrics,MISSING_INPUT,No original evidence found,Frozen checkpoint / exact recipe reconstruction only,Attach actual file later; historical-only reporting remains allowed
+applicable_legacy_train_validation_CSVs,MISSING_INPUT,No usable applicable manifests,Legacy lineage conclusion,Attach originals; Phase02 reconstructs grouped lineage from actual data

@@ -1,0 +1,311 @@
+{
+  "artifact_manifest": "phase01_manifest.schema.json",
+  "null_policy": "JSON null plus reason; CSV empty cells encode null, not zero. Read status/reason columns.",
+  "phase02_contract": "phase02_contract.json",
+  "primary_keys": {
+    "archive_inventory.csv": [
+      "archive_id"
+    ],
+    "archive_members.csv": [
+      "archive_id",
+      "member_index"
+    ],
+    "decision_gates.csv": [
+      "gate_id"
+    ],
+    "literature_matrix.csv": [
+      "paper_id"
+    ],
+    "preliminary_lineage_scan.csv": [
+      "candidate_id"
+    ],
+    "repository_registry.csv": [
+      "model_id"
+    ],
+    "resource_plan.csv": [
+      "item_id"
+    ]
+  },
+  "schema_version": "1.0",
+  "tables": {
+    "archive_expectations.csv": {
+      "columns": [
+        "expected_name",
+        "status",
+        "discovered_path",
+        "note"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 5,
+      "schema_version": "1.0"
+    },
+    "archive_inventory.csv": {
+      "columns": [
+        "archive_id",
+        "name",
+        "path",
+        "sha256",
+        "hash_status",
+        "bytes",
+        "members",
+        "images_by_extension",
+        "mask_name_hints",
+        "uncompressed_bytes",
+        "compressed_member_bytes",
+        "warnings",
+        "status",
+        "integrity_scope",
+        "source_type"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 5,
+      "schema_version": "1.0"
+    },
+    "archive_members.csv": {
+      "columns": [
+        "archive_id",
+        "member_index",
+        "member_name",
+        "file_size",
+        "compressed_size",
+        "crc32",
+        "is_directory",
+        "image_extension",
+        "mask_name_hint",
+        "source_family_hint",
+        "warnings",
+        "payload_integrity",
+        "member_sha256",
+        "source_type"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 121794,
+      "schema_version": "1.0"
+    },
+    "archive_overlap_candidates.csv": {
+      "columns": [
+        "basename",
+        "file_size",
+        "crc32",
+        "archive_ids",
+        "evidence"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 158,
+      "schema_version": "1.0"
+    },
+    "archive_warnings.csv": {
+      "columns": [
+        "archive_id",
+        "member_index",
+        "member_name",
+        "warning",
+        "action"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 0,
+      "schema_version": "1.0"
+    },
+    "data_access_log.csv": {
+      "columns": [
+        "timestamp_utc",
+        "phase",
+        "path",
+        "operation",
+        "allowed_role",
+        "status",
+        "note"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 0,
+      "schema_version": "1.0"
+    },
+    "decision_gates.csv": {
+      "columns": [
+        "gate_id",
+        "phase",
+        "requirement",
+        "evidence_ref",
+        "verifier",
+        "verification_method",
+        "status",
+        "missing_prerequisites",
+        "failure_action",
+        "approval_requirement",
+        "signed_at",
+        "amendment_ref"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 15,
+      "schema_version": "1.0"
+    },
+    "literature_matrix.csv": {
+      "columns": [
+        "paper_id",
+        "year",
+        "venue",
+        "title",
+        "task",
+        "research_question",
+        "segmentation_relevance",
+        "datasets",
+        "dataset_requirements",
+        "risk_unit",
+        "topology",
+        "uncertainty",
+        "selective_prediction",
+        "guarantee_type",
+        "class_conditioning",
+        "domain_shift",
+        "hard_negatives",
+        "multi_seed",
+        "code_url",
+        "license_status",
+        "evidence_level",
+        "closest_overlap",
+        "remaining_gap",
+        "verified_date",
+        "current_check_status",
+        "current_check_utc",
+        "source_url",
+        "blueprint_sha256",
+        "provenance_note"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 22,
+      "schema_version": "1.0"
+    },
+    "missing_inputs.csv": {
+      "columns": [
+        "item",
+        "status",
+        "reason",
+        "blocks",
+        "required_action"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 5,
+      "schema_version": "1.0"
+    },
+    "planning_power.csv": {
+      "columns": [
+        "risk",
+        "accepted_n_fixed",
+        "assumed_true_error_rate",
+        "maximum_passing_failures",
+        "conditional_pass_probability",
+        "evidence_kind"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 80,
+      "schema_version": "1.0"
+    },
+    "preliminary_lineage_scan.csv": {
+      "columns": [
+        "candidate_id",
+        "method",
+        "key",
+        "train_count",
+        "validation_count",
+        "train_examples",
+        "validation_examples",
+        "status",
+        "required_action"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 0,
+      "schema_version": "1.0"
+    },
+    "reference_rechecks.csv": {
+      "columns": [
+        "reference_id",
+        "status",
+        "checked_utc",
+        "url",
+        "reason"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 22,
+      "schema_version": "1.0"
+    },
+    "repository_registry.csv": {
+      "columns": [
+        "model_id",
+        "official_repository",
+        "commit_sha",
+        "commit_provenance",
+        "local_source_sha256",
+        "source_pin_status",
+        "license_status",
+        "license_evidence_ref",
+        "license_sha256",
+        "permission_status",
+        "pretrained_weight_permission",
+        "package_version",
+        "dependency_notes",
+        "runtime_compatibility",
+        "documentation_evidence",
+        "network_check",
+        "smoke_status",
+        "smoke_result_ref",
+        "blocker"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 5,
+      "schema_version": "1.0"
+    },
+    "resource_plan.csv": {
+      "columns": [
+        "item_id",
+        "phase",
+        "engine",
+        "gpu_hours_low",
+        "gpu_hours_high",
+        "seeds",
+        "estimate_kind",
+        "measured_seconds",
+        "peak_cuda_bytes",
+        "checkpoint_bytes",
+        "runtime_available_ram_bytes",
+        "runtime_free_disk_bytes",
+        "session_limit_hours",
+        "dependency",
+        "recovery_strategy",
+        "notes"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 13,
+      "schema_version": "1.0"
+    },
+    "sample_size_feasibility.csv": {
+      "columns": [
+        "scenario_type",
+        "risk",
+        "alpha",
+        "delta_cell",
+        "available_independent_n",
+        "assumed_class_coverage",
+        "accepted_n",
+        "failures",
+        "ucb",
+        "status",
+        "minimum_accepted_n",
+        "reason"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 104,
+      "schema_version": "1.0"
+    },
+    "source_pattern_inventory.csv": {
+      "columns": [
+        "archive_id",
+        "source_family_hint",
+        "naming_role",
+        "member_count"
+      ],
+      "key_policy": "See primary_keys; physical row index is not a scientific sample ID",
+      "row_count": 19,
+      "schema_version": "1.0"
+    }
+  }
+}

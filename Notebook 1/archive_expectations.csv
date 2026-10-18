@@ -1,0 +1,6 @@
+expected_name,status,discovered_path,note
+"CRACK500, CrackTree200, GAPS384.zip",NOT_MATCHED_BY_NAME,,Kaggle extracted the ZIP. Exact source and license verification remain Phase02 tasks.
+CrackForest dataset(CFD).zip,EXTRACTED_DIRECTORY_CANDIDATE,/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/CrackForest dataset(CFD),Kaggle extracted the ZIP. Exact source and license verification remain Phase02 tasks.
+DeepCrack.zip,EXTRACTED_DIRECTORY_CANDIDATE,/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/DeepCrack,Kaggle extracted the ZIP. Exact source and license verification remain Phase02 tasks.
+SDNET2018.zip,EXTRACTED_DIRECTORY_CANDIDATE,/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/SDNET2018,Kaggle extracted the ZIP. Exact source and license verification remain Phase02 tasks.
+crack segmentation dataset.zip,EXTRACTED_DIRECTORY_CANDIDATE,/kaggle/input/datasets/abarman79/wall-crack-cp-datasets/crack segmentation dataset,Kaggle extracted the ZIP. Exact source and license verification remain Phase02 tasks.

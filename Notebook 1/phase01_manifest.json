@@ -6,7 +6,7 @@
   "code_hash_method": "SHA256(UTF8(core_source + newline + workflow_source)); source files included",
   "code_sha256": "8e8b168fdc81dd35beebdd1d6819ba96b3f1d7c5b47695aa9390275c8c1e44bc",
   "config_sha256": "d3a9b41a929c12d9895cd41212ccd44400141939c6289d2f1a8325dc00f4355f",
-  "created_utc": "2026-10-15T10:24:08.933194+00:00",
+  "created_utc": "2026-10-15T11:15:57.980444+00:00",
   "environment_file": "environment_snapshot.json",
   "exclusions": "No raw images/masks, original archives, trained checkpoints, stage cache, self hash, or outer ZIP in output_artifacts",
   "gate_results": [
@@ -270,20 +270,20 @@
       "byte_size": 8045,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "NEXT_PHASE_INPUTS.md",
       "required_by": [
         "02"
       ],
       "schema_version": "1.0",
-      "sha256": "4154d2a726d8691b2bf3b400c9e21ef507e5f9bc6c7070f55f6c02358e33083e"
+      "sha256": "2285546d329e74e2d8f250266003ef5861791e3676093d5d110afa1d7fbdbbc0"
     },
     {
       "artifact_id": "phase01:archive_expectations.csv",
       "byte_size": 1041,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "archive_expectations.csv",
       "required_by": [
         "audit"
@@ -296,7 +296,7 @@
       "byte_size": 1740,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "archive_inventory.csv",
       "required_by": [
         "02"
@@ -309,7 +309,7 @@
       "byte_size": 25325785,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "archive_members.csv",
       "required_by": [
         "audit"
@@ -322,7 +322,7 @@
       "byte_size": 19797,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "archive_overlap_candidates.csv",
       "required_by": [
         "audit"
@@ -335,7 +335,7 @@
       "byte_size": 52,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "archive_warnings.csv",
       "required_by": [
         "audit"
@@ -348,7 +348,7 @@
       "byte_size": 161911,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "blueprint_v3.3.md",
       "required_by": [
         "02"
@@ -361,7 +361,7 @@
       "byte_size": 880,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "config.json",
       "required_by": [
         "02"
@@ -374,7 +374,7 @@
       "byte_size": 39358,
       "media_type": "application/zip",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "cracksafe_core.zip",
       "required_by": [
         "02"
@@ -387,7 +387,7 @@
       "byte_size": 61,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "data_access_log.csv",
       "required_by": [
         "audit"
@@ -400,7 +400,7 @@
       "byte_size": 540,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "dataset_discovery.json",
       "required_by": [
         "02"
@@ -413,7 +413,7 @@
       "byte_size": 6176,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "decision_gates.csv",
       "required_by": [
         "02"
@@ -423,23 +423,23 @@
     },
     {
       "artifact_id": "phase01:environment_snapshot.json",
-      "byte_size": 24435,
+      "byte_size": 24433,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "environment_snapshot.json",
       "required_by": [
         "audit"
       ],
       "schema_version": "1.0",
-      "sha256": "3cf29b17992d678dfc37dc5aa79f7bdabce10aaf2b2b2645a7bd39bb7df00fcf"
+      "sha256": "d0a26e9a7c5c1a28e10cf3c4c256708d5b8b2ff7590b295aa3dd57ec178246fc"
     },
     {
       "artifact_id": "phase01:field_data_decision.md",
       "byte_size": 965,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "field_data_decision.md",
       "required_by": [
         "02"
@@ -452,7 +452,7 @@
       "byte_size": 289,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "field_evidence_inventory.json",
       "required_by": [
         "audit"
@@ -465,7 +465,7 @@
       "byte_size": 33868703,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "input_fingerprints.json",
       "required_by": [
         "audit"
@@ -478,7 +478,7 @@
       "byte_size": 1531,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "legacy_baseline_record.md",
       "required_by": [
         "audit"
@@ -491,7 +491,7 @@
       "byte_size": 83,
       "media_type": "application/octet-stream",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "legacy_hashes.sha256",
       "required_by": [
         "audit"
@@ -504,7 +504,7 @@
       "byte_size": 1487,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "legacy_manifest.json",
       "required_by": [
         "02"
@@ -517,7 +517,7 @@
       "byte_size": 37219,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "literature_matrix.csv",
       "required_by": [
         "audit"
@@ -530,7 +530,7 @@
       "byte_size": 955,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "missing_inputs.csv",
       "required_by": [
         "02"
@@ -543,7 +543,7 @@
       "byte_size": 153,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_checks/dmsrcrack.json",
       "required_by": [
         "audit"
@@ -556,7 +556,7 @@
       "byte_size": 153,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_checks/scsegamba.json",
       "required_by": [
         "audit"
@@ -569,7 +569,7 @@
       "byte_size": 156,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_checks/segformer_b0.json",
       "required_by": [
         "audit"
@@ -582,7 +582,7 @@
       "byte_size": 164,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_checks/unetpp_convnext_tiny.json",
       "required_by": [
         "audit"
@@ -595,7 +595,7 @@
       "byte_size": 156,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_checks/unetpp_effb3.json",
       "required_by": [
         "audit"
@@ -608,7 +608,7 @@
       "byte_size": 8921,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_roster.json",
       "required_by": [
         "02"
@@ -621,7 +621,7 @@
       "byte_size": 6361,
       "media_type": "text/x-python",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "model_smoke_worker.py",
       "required_by": [
         "audit"
@@ -634,7 +634,7 @@
       "byte_size": 1770,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "modern_baseline_repro_check.md",
       "required_by": [
         "audit"
@@ -647,7 +647,7 @@
       "byte_size": 12872,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "novelty_gap.md",
       "required_by": [
         "audit"
@@ -660,7 +660,7 @@
       "byte_size": 117385,
       "media_type": "text/x-python",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "phase01_core.py",
       "required_by": [
         "audit"
@@ -673,7 +673,7 @@
       "byte_size": 1609,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "phase01_manifest.schema.json",
       "required_by": [
         "audit"
@@ -686,7 +686,7 @@
       "byte_size": 3577,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "phase02_contract.json",
       "required_by": [
         "audit"
@@ -699,20 +699,20 @@
       "byte_size": 1004,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "phase_status.json",
       "required_by": [
         "audit"
       ],
       "schema_version": "1.0",
-      "sha256": "82ea15aa7768f85d0ed31adf76dd865fc1d7aef09933a380eb3df60d1f439d54"
+      "sha256": "40f360a6153b797314724d0e8115af73bcfd0837bf1130123dd3d375c35da642"
     },
     {
       "artifact_id": "phase01:planning_power.csv",
       "byte_size": 10622,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "planning_power.csv",
       "required_by": [
         "audit"
@@ -725,7 +725,7 @@
       "byte_size": 22826,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "prediction_only_topology_design.md",
       "required_by": [
         "audit"
@@ -738,7 +738,7 @@
       "byte_size": 456,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "preliminary_lineage_report.md",
       "required_by": [
         "audit"
@@ -751,7 +751,7 @@
       "byte_size": 112,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "preliminary_lineage_scan.csv",
       "required_by": [
         "audit"
@@ -764,7 +764,7 @@
       "byte_size": 10529,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "rcps_decision_D2.md",
       "required_by": [
         "audit"
@@ -777,7 +777,7 @@
       "byte_size": 2765,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "reference_rechecks.csv",
       "required_by": [
         "audit"
@@ -790,7 +790,7 @@
       "byte_size": 10874,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "reference_register_inherited.md",
       "required_by": [
         "audit"
@@ -803,7 +803,7 @@
       "byte_size": 11418,
       "media_type": "text/plain",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "repository_evidence/segformer_b0_licenses.txt",
       "required_by": [
         "audit"
@@ -816,7 +816,7 @@
       "byte_size": 2767,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "repository_registry.csv",
       "required_by": [
         "audit"
@@ -829,20 +829,20 @@
       "byte_size": 5541,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "resource_plan.csv",
       "required_by": [
         "audit"
       ],
       "schema_version": "1.0",
-      "sha256": "f37a97ec537f4d7af7eb38db1763f48671e1921a6d8534b2b1c52a1675f5c41a"
+      "sha256": "47cf1e7e0a2a26c8b3d2e36a867b3f2c4220ff4bf2b92840867d6783778ac731"
     },
     {
       "artifact_id": "phase01:resource_plan_notes.md",
       "byte_size": 6960,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "resource_plan_notes.md",
       "required_by": [
         "audit"
@@ -855,20 +855,20 @@
       "byte_size": 365,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "run_identity.json",
       "required_by": [
         "audit"
       ],
       "schema_version": "1.0",
-      "sha256": "1e90cfcf78e0a92145837e908b3ce0b5e132c2718f7704fe0f8564bc66594184"
+      "sha256": "5ccd3e1ded6729a2b0b244b84ab1088a1a91553cb3b3890046aae06a05a82bbe"
     },
     {
       "artifact_id": "phase01:sample_size_feasibility.csv",
       "byte_size": 18993,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "sample_size_feasibility.csv",
       "required_by": [
         "audit"
@@ -881,7 +881,7 @@
       "byte_size": 8044,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "schemas.json",
       "required_by": [
         "02"
@@ -894,7 +894,7 @@
       "byte_size": 922,
       "media_type": "text/csv",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "source_pattern_inventory.csv",
       "required_by": [
         "audit"
@@ -907,7 +907,7 @@
       "byte_size": 3,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "stage_errors.json",
       "required_by": [
         "audit"
@@ -920,7 +920,7 @@
       "byte_size": 5008,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "statistical_design.json",
       "required_by": [
         "02"
@@ -933,7 +933,7 @@
       "byte_size": 2559,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "statistical_self_tests.json",
       "required_by": [
         "audit"
@@ -946,7 +946,7 @@
       "byte_size": 2750,
       "media_type": "text/markdown",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "supervisor_decisions.md",
       "required_by": [
         "02"
@@ -959,7 +959,7 @@
       "byte_size": 10807,
       "media_type": "text/x-bibtex",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "verified_references.bib",
       "required_by": [
         "audit"
@@ -972,7 +972,7 @@
       "byte_size": 10278,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "workflow_source.json",
       "required_by": [
         "audit"
@@ -985,18 +985,18 @@
       "byte_size": 28816,
       "media_type": "application/json",
       "privacy/license_status": "PRIVATE_RESEARCH_CONTROL; raw-source and third-party rights not transferred",
-      "producing_run_id": "20261015T102408933036Z_d3a9b41a",
+      "producing_run_id": "20261015T111557980168Z_d3a9b41a",
       "relative_path": "artifact_catalog.json",
       "required_by": [
         "audit"
       ],
       "schema_version": "1.0",
-      "sha256": "77ccb65c6b627d5091db059ccd51043bb23dc618885c5c13d99b8a5f183b5c61"
+      "sha256": "5f77a96c84db6cfdb18f3232791b66386eb96ee9416bd485f440f3ca1cf3df49"
     }
   ],
   "phase": "01",
   "phase02_audit_ready": true,
-  "run_id": "20261015T102408933036Z_d3a9b41a",
+  "run_id": "20261015T111557980168Z_d3a9b41a",
   "schema_version": "1.0",
   "scope": "MSC",
   "seeds": [

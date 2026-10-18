@@ -1,0 +1,105 @@
+scenario_type,risk,alpha,delta_cell,available_independent_n,assumed_class_coverage,accepted_n,failures,ucb,status,minimum_accepted_n,reason
+MINIMUM_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,,,60,0,0.09898239322400396,PLANNING_MATH_NOT_DATA,60,Exact integer search
+MINIMUM_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,,,82,1,0.09911010321736788,PLANNING_MATH_NOT_DATA,82,Exact integer search
+MINIMUM_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,,,101,2,0.09917397091179714,PLANNING_MATH_NOT_DATA,101,Exact integer search
+MINIMUM_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,,,150,5,0.09998172356337191,PLANNING_MATH_NOT_DATA,150,Exact integer search
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.25,30,0,0.18816727227965657,NOT_CERTIFIABLE_INSUFFICIENT_N,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.25,30,1,0.25060453241526826,NOT_CERTIFIABLE_INSUFFICIENT_N,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.25,30,2,0.3027570893773282,NOT_CERTIFIABLE_INSUFFICIENT_N,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.25,30,5,0.4335813972685756,NOT_CERTIFIABLE_INSUFFICIENT_N,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.5,60,0,0.09898239322400396,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.5,60,1,0.13322225413601796,FAILS_TARGET,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.5,60,2,0.1622722918149995,FAILS_TARGET,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.5,60,5,0.23703764930485868,FAILS_TARGET,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.75,90,0,0.06712772703656875,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.75,90,1,0.09066498302161576,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.75,90,2,0.11073102945698811,FAILS_TARGET,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,0.75,90,5,0.16275967889706822,FAILS_TARGET,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,1.0,120,0,0.05078052760386545,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,1.0,120,1,0.06870574331035162,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,1.0,120,2,0.08402318797402415,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,120,1.0,120,5,0.12387983353905996,FAILS_TARGET,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.25,75,0,0.08000255319452267,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.25,75,1,0.1079032052446599,FAILS_TARGET,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.25,75,2,0.1316439017735663,FAILS_TARGET,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.25,75,5,0.19302145795282827,FAILS_TARGET,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.5,150,0,0.04083502628302917,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.5,150,1,0.05530739250347663,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.5,150,2,0.06769141685361284,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.5,150,5,0.09998172356337191,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.75,225,0,0.02741207349518789,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.75,225,1,0.03717900508511426,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.75,225,2,0.04555179588750414,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,0.75,225,5,0.06744190098424507,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,1.0,300,0,0.020630318155105014,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,1.0,300,1,0.028000407857077313,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,1.0,300,2,0.034324166863204275,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,300,1.0,300,5,0.050879011083094644,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.25,125,0,0.04879971167890761,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.25,125,1,0.06603953648888944,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.25,125,2,0.08077539329031999,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.25,125,5,0.11913467263713348,FAILS_TARGET,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.5,250,0,0.024705024968808536,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.5,250,1,0.033516774125429666,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.5,250,2,0.04107344927338447,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.5,250,5,0.06084032966040599,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.75,375,0,0.016538587532151258,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.75,375,1,0.022456305763139943,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.75,375,2,0.027536609380074822,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,0.75,375,5,0.040846643772436846,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,1.0,500,0,0.012429761975791686,PASS,60,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,1.0,500,1,0.016884341303139164,PASS,82,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,1.0,500,2,0.020710595992635195,PASS,101,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,structural_miss,0.1,0.0019230769230769232,500,1.0,500,5,0.030742894580003274,PASS,150,Assumed coverage; no dataset sample size or outcome inferred
+MINIMUM_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,,,122,0,0.049969217136360614,PLANNING_MATH_NOT_DATA,122,Exact integer search
+MINIMUM_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,,,167,1,0.04980334053378188,PLANNING_MATH_NOT_DATA,167,Exact integer search
+MINIMUM_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,,,205,2,0.04990464861806525,PLANNING_MATH_NOT_DATA,205,Exact integer search
+MINIMUM_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,,,306,5,0.04989859237130943,PLANNING_MATH_NOT_DATA,306,Exact integer search
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.25,30,0,0.18816727227965657,NOT_CERTIFIABLE_INSUFFICIENT_N,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.25,30,1,0.25060453241526826,NOT_CERTIFIABLE_INSUFFICIENT_N,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.25,30,2,0.3027570893773282,NOT_CERTIFIABLE_INSUFFICIENT_N,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.25,30,5,0.4335813972685756,NOT_CERTIFIABLE_INSUFFICIENT_N,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.5,61,0,0.09744151161150047,NOT_CERTIFIABLE_INSUFFICIENT_N,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.5,61,1,0.13117093355111842,NOT_CERTIFIABLE_INSUFFICIENT_N,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.5,61,2,0.15979480338386529,NOT_CERTIFIABLE_INSUFFICIENT_N,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.5,61,5,0.23349114961422976,NOT_CERTIFIABLE_INSUFFICIENT_N,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.75,91,0,0.06641512001877296,NOT_CERTIFIABLE_INSUFFICIENT_N,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.75,91,1,0.0897093993252598,NOT_CERTIFIABLE_INSUFFICIENT_N,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.75,91,2,0.10957036346551033,NOT_CERTIFIABLE_INSUFFICIENT_N,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,0.75,91,5,0.16107538432527346,NOT_CERTIFIABLE_INSUFFICIENT_N,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,1.0,122,0,0.049969217136360614,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,1.0,122,1,0.06761384685645029,FAILS_TARGET,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,1.0,122,2,0.08269324277917264,FAILS_TARGET,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,122,1.0,122,5,0.12193717180276759,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.25,75,0,0.08000255319452267,NOT_CERTIFIABLE_INSUFFICIENT_N,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.25,75,1,0.1079032052446599,NOT_CERTIFIABLE_INSUFFICIENT_N,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.25,75,2,0.1316439017735663,NOT_CERTIFIABLE_INSUFFICIENT_N,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.25,75,5,0.19302145795282827,NOT_CERTIFIABLE_INSUFFICIENT_N,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.5,150,0,0.04083502628302917,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.5,150,1,0.05530739250347663,FAILS_TARGET,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.5,150,2,0.06769141685361284,FAILS_TARGET,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.5,150,5,0.09998172356337191,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.75,225,0,0.02741207349518789,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.75,225,1,0.03717900508511426,PASS,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.75,225,2,0.04555179588750414,PASS,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,0.75,225,5,0.06744190098424507,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,1.0,300,0,0.020630318155105014,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,1.0,300,1,0.028000407857077313,PASS,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,1.0,300,2,0.034324166863204275,PASS,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,300,1.0,300,5,0.050879011083094644,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.25,125,0,0.04879971167890761,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.25,125,1,0.06603953648888944,FAILS_TARGET,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.25,125,2,0.08077539329031999,FAILS_TARGET,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.25,125,5,0.11913467263713348,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.5,250,0,0.024705024968808536,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.5,250,1,0.033516774125429666,PASS,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.5,250,2,0.04107344927338447,PASS,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.5,250,5,0.06084032966040599,FAILS_TARGET,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.75,375,0,0.016538587532151258,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.75,375,1,0.022456305763139943,PASS,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.75,375,2,0.027536609380074822,PASS,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,0.75,375,5,0.040846643772436846,PASS,306,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,1.0,500,0,0.012429761975791686,PASS,122,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,1.0,500,1,0.016884341303139164,PASS,167,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,1.0,500,2,0.020710595992635195,PASS,205,Assumed coverage; no dataset sample size or outcome inferred
+HYPOTHETICAL_FIXED_ACCEPTED_N,false_structure,0.05,0.0019230769230769232,500,1.0,500,5,0.030742894580003274,PASS,306,Assumed coverage; no dataset sample size or outcome inferred

@@ -1,0 +1,45 @@
+{
+  "checkpoint_deserialization_performed": false,
+  "evidence_categories": {
+    "clean_retraining": "NOT_RUN; Phase03 after Phase02 grouped audit",
+    "frozen_checkpoint_evaluation": "NOT_RUN; requires authenticated checkpoint + configuration + original splits",
+    "historical_reference": "AVAILABLE_FROM_BLUEPRINT_NOT_REPRODUCED"
+  },
+  "found_records": [],
+  "historical_facts": {
+    "evidence_level": "HISTORICAL_REFERENCE_NOT_REPRODUCED",
+    "external_claim_unverified": "Up to 72.9 percent decline; motivational historical statement only; dataset/metric basis not independently reproduced",
+    "historical_split_counts_unverified": {
+      "combined": 11298,
+      "train": 9603,
+      "validation": 1695
+    },
+    "phase12": {
+      "crack_Dice": 0.722288,
+      "crack_IoU": 0.581844,
+      "mask_threshold": 0.55,
+      "no_crack_false_positive_rate": 0.045977,
+      "population_n": 1356,
+      "temperature": 1.556495
+    },
+    "phase14A": {
+      "Boundary_IoU": 0.343042,
+      "FN": 0,
+      "FP": 5,
+      "TN": 213,
+      "TP": 1477,
+      "clDice": 0.793017,
+      "classification_F1": 0.99831,
+      "classification_precision": 0.996626,
+      "classification_recall": 1.0,
+      "classification_specificity": 0.977064,
+      "crack_Dice": 0.722671,
+      "crack_IoU": 0.582254,
+      "no_crack_false_positive_count": 5,
+      "no_crack_false_positive_rate": 0.022936,
+      "no_crack_n": 218,
+      "population_n": 1695
+    }
+  },
+  "schema_version": "1.0"
+}

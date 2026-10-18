@@ -1,0 +1,10 @@
+{
+  "documents": [],
+  "evidence_authenticity": "Not independently authenticated; no expert annotations inferred",
+  "missing_or_invalid": [
+    "No documented field-access package supplied"
+  ],
+  "route": "B",
+  "status": "ROUTE_B_DEFAULT",
+  "supervisor_approval": "PENDING_APPROVAL"
+}

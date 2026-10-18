@@ -1,4 +1,4 @@
-# Notebook02 handoff — actual run 20261015T102408933036Z_d3a9b41a
+# Notebook02 handoff — actual run 20261015T111557980168Z_d3a9b41a
 
 Blueprint 3.3; schema1.0; core1.0.0; config SHA-256 `d3a9b41a929c12d9895cd41212ccd44400141939c6289d2f1a8325dc00f4355f`; combined implementation/workflow SHA-256 `8e8b168fdc81dd35beebdd1d6819ba96b3f1d7c5b47695aa9390275c8c1e44bc`. Run mode **FULL**. Global Phase01 status **BLOCKED** while relevant evidence/signatures remain pending. Data-audit readiness: **True**. This does not permit training or calibration.
 
@@ -6,9 +6,9 @@ Blueprint 3.3; schema1.0; core1.0.0; config SHA-256 `d3a9b41a929c12d9895cd41212c
 
 | File or Bundle | Purpose | Generated Kaggle Location | Required for Notebook 02? | How to Attach |
 |---|---|---|---|---|
-| `CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip` | All small Phase01 controls, blueprint, roster, statistical design, manifests and shared code | `/kaggle/working/cracksafe_cp/phase01/run_20261015T102408933036Z_d3a9b41a/CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip` | Yes | Prefer attach this saved Notebook01 output version through Add Input; private dataset alternative below |
-| `CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip.sha256` | Verify final immutable ZIP bytes | `/kaggle/working/cracksafe_cp/phase01/run_20261015T102408933036Z_d3a9b41a/CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip.sha256` | Yes | Keep next to the ZIP in the same attached output/dataset |
-| `phase01_manifest.json`, its sidecar, `SHA256SUMS.sha256`, `artifact_catalog.json`, `NEXT_PHASE_INPUTS.md` | Internal fingerprints and contracts | Inside canonical ZIP and `/kaggle/working/cracksafe_cp/phase01/run_20261015T102408933036Z_d3a9b41a` | Required contents; no separate attachment if ZIP is present | Read from verified ZIP |
+| `CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip` | All small Phase01 controls, blueprint, roster, statistical design, manifests and shared code | `/kaggle/working/cracksafe_cp/phase01/run_20261015T111557980168Z_d3a9b41a/CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip` | Yes | Prefer attach this saved Notebook01 output version through Add Input; private dataset alternative below |
+| `CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip.sha256` | Verify final immutable ZIP bytes | `/kaggle/working/cracksafe_cp/phase01/run_20261015T111557980168Z_d3a9b41a/CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip.sha256` | Yes | Keep next to the ZIP in the same attached output/dataset |
+| `phase01_manifest.json`, its sidecar, `SHA256SUMS.sha256`, `artifact_catalog.json`, `NEXT_PHASE_INPUTS.md` | Internal fingerprints and contracts | Inside canonical ZIP and `/kaggle/working/cracksafe_cp/phase01/run_20261015T111557980168Z_d3a9b41a` | Required contents; no separate attachment if ZIP is present | Read from verified ZIP |
 | `statistical_design.json`, `model_roster.json`, `config.json`, `blueprint_v3.3.md`, `cracksafe_core.zip`, schemas/gates/reports | Exact downstream methodology and code dependencies | Inside canonical ZIP | Yes as bundled contents | Do not download/reattach each separately |
 | `abarman79/wall-crack-cp-datasets` | Raw archives; deliberately absent from the control ZIP | Discovered here: `/kaggle/input/datasets/abarman79/wall-crack-cp-datasets` | Yes, attach the same actual dataset version again | Kaggle Add Input → Your Datasets; verify archive SHA-256 |
 | Original legacy evidence and field/permission documents | Resolve still-missing provenance if later supplied | Actual optional mounts recorded in ledgers | Optional for Phase02 initial audit; required before claims depending on them | Attach private evidence dataset; never fabricate replacements |
@@ -17,7 +17,7 @@ Blueprint 3.3; schema1.0; core1.0.0; config SHA-256 `d3a9b41a929c12d9895cd41212c
 
 **Reliable fallback/portable archive:** create a **private Kaggle dataset** containing the canonical ZIP and sidecar only. Version it, attach it to Notebook02, and also attach the raw dataset. Use this if the output-version picker is unavailable or cannot pin the version. Check privacy. A local draft run alone is not persistence.
 
-Actual mount slugs are discovered. Examples such as `/kaggle/input/<saved-notebook-output>/.../CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip` or `/kaggle/input/<phase01-control-dataset>/CrackSAFE_CP_v3.3_phase01_control_20261015T102408933036Z_d3a9b41a.zip` are examples only. Recursively discover the exact canonical basename plus sidecar; if more than one run matches, require an explicit choice. Never guess the mount directory.
+Actual mount slugs are discovered. Examples such as `/kaggle/input/<saved-notebook-output>/.../CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip` or `/kaggle/input/<phase01-control-dataset>/CrackSAFE_CP_v3.3_phase01_control_20261015T111557980168Z_d3a9b41a.zip` are examples only. Recursively discover the exact canonical basename plus sidecar; if more than one run matches, require an explicit choice. Never guess the mount directory.
 
 ## Critical artifact IDs and content hashes
 

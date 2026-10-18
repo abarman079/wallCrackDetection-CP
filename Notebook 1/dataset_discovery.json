@@ -1,0 +1,14 @@
+{
+  "dataset_reference": "abarman79/wall-crack-cp-datasets",
+  "historical_pairs_expected_unverified": 11298,
+  "historical_source_groups_expected_unverified": 11,
+  "independent_calibration_unit_count": null,
+  "integrity_scope": "Per-file SHA256 in FULL; no ZIP CRC or decoded-image verification",
+  "method": "RECURSIVE_DATASET_DIRECTORY_MATCH",
+  "original_zip_bytes_available": false,
+  "roots": [
+    "/kaggle/input/datasets/abarman79/wall-crack-cp-datasets"
+  ],
+  "source_type": "EXTRACTED_DIRECTORY",
+  "unique_pair_count": null
+}

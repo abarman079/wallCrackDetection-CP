@@ -1,0 +1,23 @@
+reference_id,status,checked_utc,url,reason
+R01,NOT_RUN,,https://doi.org/10.1145/3478535,network_checks=False; inherited blueprint review only
+R02,NOT_RUN,,https://arxiv.org/abs/2110.01052,network_checks=False; inherited blueprint review only
+R03,NOT_RUN,,https://doi.org/10.1093/biomet/26.4.404,network_checks=False; inherited blueprint review only
+R04,NOT_RUN,,https://arxiv.org/abs/2208.02814,network_checks=False; inherited blueprint review only
+R05,NOT_RUN,,https://proceedings.neurips.cc/paper_files/paper/2023/file/19ded4cfc36a7feb7fce975393d378fd-Paper-Conference.pdf,network_checks=False; inherited blueprint review only
+R06,NOT_RUN,,https://doi.org/10.1016/j.ress.2025.110909,network_checks=False; inherited blueprint review only
+R07,NOT_RUN,,https://arxiv.org/abs/2503.01113,network_checks=False; inherited blueprint review only
+R08,NOT_RUN,,https://doi.org/10.1016/j.autcon.2026.107004,network_checks=False; inherited blueprint review only
+R09,NOT_RUN,,https://doi.org/10.1016/j.engappai.2025.113688,network_checks=False; inherited blueprint review only
+R10,NOT_RUN,,https://arxiv.org/abs/2410.19894,network_checks=False; inherited blueprint review only
+R11,NOT_RUN,,https://arxiv.org/abs/2606.05641,network_checks=False; inherited blueprint review only
+R12,NOT_RUN,,https://papers.neurips.cc/paper_files/paper/2017/hash/9ef2ed4b7fd2c810847ffa5fa85bce38-Abstract.html,network_checks=False; inherited blueprint review only
+R13,NOT_RUN,,https://openaccess.thecvf.com/content/CVPR2021/html/Shit_clDice_-_A_Novel_Topology-Preserving_Loss_Function_for_Tubular_Structure_CVPR_2021_paper.html,network_checks=False; inherited blueprint review only
+R14,NOT_RUN,,https://openaccess.thecvf.com/content/CVPR2024W/SAIAD/html/Mossina_Conformal_Semantic_Image_Segmentation_Post-hoc_Quantification_of_Predictive_Uncertainty_CVPRW_2024_paper.html,network_checks=False; inherited blueprint review only
+R15,NOT_RUN,,https://arxiv.org/abs/2511.15406,network_checks=False; inherited blueprint review only
+R16,NOT_RUN,,https://arxiv.org/abs/1904.06019,network_checks=False; inherited blueprint review only
+R17,NOT_RUN,,https://proceedings.mlr.press/v266/almeida25a.html,network_checks=False; inherited blueprint review only
+R18,NOT_RUN,,https://arxiv.org/abs/2501.11413,network_checks=False; inherited blueprint review only
+R19,NOT_RUN,,https://www.mdpi.com/2072-4292/17/12/2101,network_checks=False; inherited blueprint review only
+R20,NOT_RUN,,https://arxiv.org/abs/2406.10490,network_checks=False; inherited blueprint review only
+R21,NOT_RUN,,https://digitalcommons.usu.edu/all_datasets/48/,network_checks=False; inherited blueprint review only
+R22,NOT_RUN,,https://www.kaggle.com/docs/notebooks,network_checks=False; inherited blueprint review only
