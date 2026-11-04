@@ -1,0 +1,18 @@
+{
+  "actual_upstream_integrity": true,
+  "budget_stopped": false,
+  "execution_status": "COMPLETED",
+  "finished_utc": "2026-11-04T06:16:54.575679+00:00",
+  "job": "audit",
+  "phase": "03",
+  "phase04_authorized": false,
+  "real_training_performed": false,
+  "run_id": "20261104T061629907173Z_68452d4f",
+  "run_mode": "SMOKE",
+  "schema_version": "1.0",
+  "scientific_status": "BLOCKED",
+  "source_contract_commit": "dc52faf2929c9358ce36937c4a5131976c4fe8de",
+  "status": "BLOCKED",
+  "test_or_calibration_labels_opened": false,
+  "training_authorized": false
+}

@@ -10,12 +10,12 @@
 |---|---|---|---|---|
 | 01 | [Notebook 1](Notebook%201/CrackSAFE_CP_Phase01_Legacy_Design_Literature_Locks.ipynb) | [Run 01 results index](Notebook%201/results/run_20261015T111557980168Z_d3a9b41a/RESULTS_INDEX.md) | [Kaggle Phase 01](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase01-legacy-design-literature-lock) | FULL inventory completed; approvals pending |
 | 02 | [Notebook 2](Notebook%202/CrackSAFE_CP_Phase02_Data_Leakage_Splits_Annotation.ipynb) | [Run 02 results index](Notebook%202/results/run_20261018T050513552430Z_afc0e8ab/RESULTS_INDEX.md) | [Kaggle Phase 02](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase02-kaggle-archivecarrier-recover) | FULL technical audit completed; PROVISIONAL / BLOCKED |
-| 03 | **Generated locally; not yet validated or committed** | No empirical results | — | Model training not authorized with PROVISIONAL splits |
+| 03 | [Notebook 3](Notebook%203/CrackSAFE_CP_Phase03_Legacy_Modern_Baselines.ipynb) | [SMOKE results](Notebook%203/results/run_20261104T061629907173Z_68452d4f/RESULTS_INDEX.md) | [Kaggle Phase 03](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase03-legacy-modern-baselines) | SMOKE PASS; real training BLOCKED |
 | 04–08 | Planned | No results | — | Follow v3.3 gates |
 
 *Kaggle URLs were provided by the project owner; their currently displayed versions were not externally accessible during this audit. These GitHub results correspond to the cryptographically verified archived runs listed below.*
 
-**Phase-03 note:** The owner has five locally generated Phase-03 files (notebook, core Python, README, guide, validation report). Their content and Kaggle execution have not yet been independently checked; this public supervisor portal intentionally does not claim a Phase-03 result.
+**Phase-03 note:** Kaggle SMOKE run `20261104T061629907173Z_68452d4f` verified Phase-01/02 inputs, passed 22 synthetic engineering tests, and exported verified outputs. No real model training, empirical accuracy, ensemble selection or risk certification was performed.
 
 ## What has actually been demonstrated
 

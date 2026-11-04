@@ -10,7 +10,7 @@ This MSc research project studies structural crack segmentation, topology-aware 
 |---|---|---|
 | 01 — Design, literature, data inventory | **FULL technical execution complete** | Canonical preserved run `20261015T111557980168Z_d3a9b41a`; phase02 audit-ready; human approvals and model smoke checks remain pending |
 | 02 — Data integrity, leakage, annotation, splits | **FULL technical execution complete; scientific status BLOCKED** | Run `20261018T050513552430Z_afc0e8ab`: 121,794 files inventoried, 88,806 decoded images, PROVISIONAL partitions, zero eligible certified units; provenance, grouping, annotations, source permissions and duplicate-retrieval caps still require resolution |
-| 03 — Baselines and three-seed ensemble | **Not authorized for training** | Requires approved FINAL Phase-02 data splits, applicable S2/S5/S6 decisions, model/weights permissions and technical gates |
+| 03 — Baselines and three-seed ensemble | **SMOKE PASS; training BLOCKED** | Kaggle SMOKE run completed; upstream controls verified; 22 synthetic tests passed. No real model training or performance results. |
 | 04–08 | Planned | Follow the locked v3.3 blueprint and phase exit gates |
 
 Technical completion is not equivalent to independent data validity, supervisor approval, statistical certification or a conclusion about structural safety.
@@ -31,7 +31,8 @@ The repository does not itself establish authorization to train or make formal r
 
 - [Phase 01](Notebook%201/README.md): notebook, source, design locks, documentation and run-specific small result records.
 - [Phase 02](Notebook%202/README.md): notebook, audited implementation, documentation and small validation results; scientific gates still blocked.
-- Future phases will follow the same `Notebook N/` pattern.
+- [Phase 03](Notebook%203/README.md): implemented notebook, Kaggle SMOKE results, methodology figure and validation reports.
+- Phases 04–08 will follow the same `Notebook N/` pattern.
 
 Within each phase, keep the executable notebook and downstream contracts at the top level; use `docs/` for reports and `results/run_<actual_id>/` for reproducible, non-sensitive outputs. Full Kaggle archives and private records are stored outside the public Git tree; any local copies live in an ignored `local_artifacts/` directory.
 

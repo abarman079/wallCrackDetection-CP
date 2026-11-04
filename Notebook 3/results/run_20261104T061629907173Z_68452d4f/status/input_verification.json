@@ -1,0 +1,18 @@
+{
+  "controls": {
+    "phase01": {
+      "provenance": "EMBEDDED_RAW_BYTES_IN_PHASE02; canonical digest independently checked",
+      "run_id": "20261015T111557980168Z_d3a9b41a",
+      "sha256": "ac13d28e73a04825bcf77434de8a6b82ba051f1e1e5d94065901ef867d9f92ca"
+    },
+    "phase02": {
+      "partition_status": "PROVISIONAL",
+      "provenance": "/kaggle/input/datasets/abarman79/phase03-kaggle-phase02-control-input-ready/CrackSAFE_CP_v3.3_phase02_control_20261018T050513552430Z_afc0e8ab.zip.bin",
+      "run_id": "20261018T050513552430Z_afc0e8ab",
+      "sha256": "9d87e629fa12d142bbb473384a7b932536edf59e33fd65c7e797c730349a7c99",
+      "status": "BLOCKED"
+    }
+  },
+  "sealed_payload_access": "INTEGRITY_STREAM_ONLY; no role labels parsed",
+  "status": "PASS"
+}

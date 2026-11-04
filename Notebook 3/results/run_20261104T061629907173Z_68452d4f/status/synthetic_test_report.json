@@ -1,0 +1,120 @@
+{
+  "candidate_model_training": false,
+  "canonical_primitive_source_sha256": "268a82ccd7a656ae18341c63b3ae336b23a3e9b2da6481dca939eb9f4b68f631",
+  "engineering_optimizer_steps": 2,
+  "real_metrics_generated": false,
+  "status": "PASS",
+  "synthetic_model": "single 1x1 Conv2d; never in scientific roster",
+  "tests": [
+    {
+      "name": "448_letterbox_valid_padding",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "empty_negative_loss_finite_gradient",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "loss_reject_shape",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "loss_reject_nonfinite",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "loss_reject_empty_valid",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "component_area20_skeleton20_threshold055",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "component_area19_rejected",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "diagonal_8_connectivity",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "area25_short_skeleton_rejected",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "GT_not_pruned_cldice",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_adapter_checkpoint_reload",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "resume_identity_rejected",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "resume_rng_exact",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "bounded_ensemble_temperature",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "engine_selection_tie_protocol",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_01_engine_comparison.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_02_seed_training_curves.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_03_temperature_reliability.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_04_hard_negative_tradeoff.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_05_efficiency.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_06_prediction_examples.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    },
+    {
+      "name": "valid_png_Fig03_07_failure_cases.png",
+      "scope": "SYNTHETIC FUNCTIONAL ONLY",
+      "status": "PASS"
+    }
+  ]
+}
