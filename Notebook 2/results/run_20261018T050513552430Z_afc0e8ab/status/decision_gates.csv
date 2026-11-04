@@ -1,0 +1,10 @@
+gate_id,technical_status,human_status,status,reason
+G02,BLOCKED,PENDING,BLOCKED,"Full fingerprints, rights, annotation, provenance, independent units and external-source isolation"
+G03,BLOCKED,PENDING,BLOCKED,"Post-reservation calibration floors, fixed count plan and nonempty required development/test roles"
+S1,LATER_PHASE,PENDING,BLOCKED,Exact statistical method; independent G07 technical review before Phase06
+S2,PENDING_REVIEW,PENDING,BLOCKED,"Population, independence, fixed class counts and acquisition stopping rule for this plan"
+S3,LATER_PHASE,PENDING,BLOCKED,Structural metric and prediction-only score definitions before their later locks
+S4,LATER_PHASE,PENDING,BLOCKED,Shift remains empirical; no automatic weighted guarantee
+S5,LATER_PHASE,PENDING,BLOCKED,"Model code/weights permissions, technical checks and training authorization"
+S6,PENDING_REVIEW,PENDING,BLOCKED,Source rights and actual reviewer resources; route B
+S7,LATER_PHASE,PENDING,BLOCKED,Proposed utility criteria: at least 50% overall automation and 30% per class; not part of the formal guarantee

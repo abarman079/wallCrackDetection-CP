@@ -1,0 +1,9 @@
+{
+  "aggregate_collection_independent_source": false,
+  "checkpoint_reproduction_verified": false,
+  "decision": "CLEAN_RETRAINING_ROUTE_PROVISIONAL",
+  "freshness": "UNKNOWN unless actual lineage evidence marks CLEAR",
+  "historical_11298_pairs": "UNVERIFIED_COLLECTION_REFERENCE; not current unique independent count",
+  "original_legacy_files_found_in_phase01": 0,
+  "training_authorization": "Not granted by this decision"
+}

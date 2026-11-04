@@ -1,0 +1,12 @@
+original_source_id,observed_confirmed_samples,observed_hint_samples,research_use,redistribution,license_name,source_url,evidence_sha256,reviewer_resources,aggregation_rights_inherited
+UNKNOWN,88806,7592,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+aigle,0,0,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+cfd,0,856,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+crack500,0,11468,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+cracktree200,0,1030,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+deepcrack,0,1579,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+esarc,0,0,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+gaps384,0,2545,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+riss,0,7644,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+sdnet2018,0,56092,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False
+tut,0,0,UNKNOWN,UNKNOWN,UNVERIFIED,,,,False

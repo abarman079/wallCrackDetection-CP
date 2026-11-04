@@ -1,4 +1,4 @@
-﻿# CrackSAFE-CP
+# CrackSAFE-CP
 
 **Component- and Topology-Aware Risk-Controlling Prediction for Selective Structural Crack Segmentation under Domain Shift**
 
@@ -34,3 +34,9 @@ The repository does not itself establish authorization to train or make formal r
 - Future phases will follow the same `Notebook N/` pattern.
 
 Within each phase, keep the executable notebook and downstream contracts at the top level; use `docs/` for reports and `results/run_<actual_id>/` for reproducible, non-sensitive outputs. Full Kaggle archives and private records are stored outside the public Git tree; any local copies live in an ignored `local_artifacts/` directory.
+
+## Supervisor review
+
+[Open the supervisor review portal](SUPERVISOR_REVIEW.md) for
+Kaggle notebooks, research results, diagnostic figures, scientific
+limitations and run provenance.

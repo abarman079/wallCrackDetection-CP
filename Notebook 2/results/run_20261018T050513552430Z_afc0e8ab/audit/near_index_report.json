@@ -1,0 +1,10 @@
+{
+  "all_pair_scan": false,
+  "arbitrary_crop_recall": "NOT_GUARANTEED; requires parent/site/session provenance",
+  "automatic_identity_proof": false,
+  "candidate_edges": 13768,
+  "caps_block_finalization": true,
+  "method": "bounded 64-bit multi-index hashing with rotations, flips and five crop windows",
+  "truncated_samples": 16304,
+  "uncapped_hamming_retrieval": "pigeonhole guarantee for indexed transforms only"
+}

@@ -1,0 +1,12 @@
+{
+  "certification_unit_disjoint": true,
+  "partition_status": "PROVISIONAL",
+  "permitted_aliases": [
+    "development = union(model,probability,policy)",
+    "hard_negative_development subset development_policy"
+  ],
+  "sample_id_unique": true,
+  "scientific_approval_implied": false,
+  "split_group_disjoint": true,
+  "status": "PASS"
+}

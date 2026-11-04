@@ -1,0 +1,10 @@
+{
+  "code_sha256": "8e8b168fdc81dd35beebdd1d6819ba96b3f1d7c5b47695aa9390275c8c1e44bc",
+  "input_layout": "EXTRACTED_DIRECTORY",
+  "overall_BLOCKED_interpretation": "Later scientific approvals pending; initial data audit permitted",
+  "raw_archive_count_interpretation": "logical sources, not raw ZIP count",
+  "run_id": "20261015T111557980168Z_d3a9b41a",
+  "shared_helpers": "Imported only after fixed outer and all internal fingerprints passed",
+  "status": "PASS",
+  "zip_sha256": "ac13d28e73a04825bcf77434de8a6b82ba051f1e1e5d94065901ef867d9f92ca"
+}

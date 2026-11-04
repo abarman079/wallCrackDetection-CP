@@ -1,0 +1,14 @@
+{
+  "cache_hits": 0,
+  "cache_misses": 88806,
+  "counts": {
+    "CLASSIFICATION_POSITIVE_NO_SEGMENTATION_GT": 8484,
+    "EMPTY_MASK_NOT_CONFIRMED_NEGATIVE": 2908,
+    "POSITIVE_MASK_PENDING_REVIEW": 3990,
+    "UNKNOWN": 73424
+  },
+  "full_inventory": true,
+  "pairing_issue_count": 1518,
+  "policy": "Unmatched cases remain reviewable; no heuristic pairing becomes adjudicated ground truth",
+  "samples_examined": 88806
+}

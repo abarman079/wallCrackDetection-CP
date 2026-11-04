@@ -1,0 +1,26 @@
+{
+  "run_id": "20261018T050513552430Z_afc0e8ab",
+  "description": "Derived from calibration_sampling_plan.json; no unit IDs or role manifests",
+  "population_status": "CORPUS_FRAME_PROPOSAL_REQUIRES_IID_AND_MIXTURE_RATIONALE",
+  "partition_status": "PROVISIONAL",
+  "fixed_N_approval": "PENDING_S2",
+  "floor_sufficient": false,
+  "preferred_target_met": false,
+  "positive": {
+    "eligible_before_reservations": 0,
+    "calibration_actual": 0,
+    "hard_floor": 120,
+    "calibration_target": 300,
+    "floor_shortfall": 120,
+    "preferred_shortfall": 300
+  },
+  "negative": {
+    "eligible_before_reservations": 0,
+    "calibration_actual": 0,
+    "hard_floor": 122,
+    "calibration_target": 300,
+    "floor_shortfall": 122,
+    "preferred_shortfall": 300
+  },
+  "calibration_outcomes_inspected": false
+}
