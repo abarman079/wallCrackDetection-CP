@@ -1,8 +1,8 @@
-# CrackSAFE-CP v3.3 — Supervisor review portal
+# CrackSAFE-CP v3.3 â€” Supervisor review portal
 
 **Research:** Component- and Topology-Aware Risk-Controlling Prediction for Selective Structural Crack Segmentation under Domain Shift.
 **Repository:** https://github.com/abarman079/wallCrackDetection-CP
-**Blueprint:** [locked v3.3](Notebook%201/blueprint_v3.3.md) — exactly eight phases / eight notebooks.
+**Blueprint:** [locked v3.3](Notebook%201/blueprint_v3.3.md) â€” exactly eight phases / eight notebooks.
 
 ## How to inspect the completed technical work
 
@@ -11,11 +11,15 @@
 | 01 | [Notebook 1](Notebook%201/CrackSAFE_CP_Phase01_Legacy_Design_Literature_Locks.ipynb) | [Run 01 results index](Notebook%201/results/run_20261015T111557980168Z_d3a9b41a/RESULTS_INDEX.md) | [Kaggle Phase 01](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase01-legacy-design-literature-lock) | FULL inventory completed; approvals pending |
 | 02 | [Notebook 2](Notebook%202/CrackSAFE_CP_Phase02_Data_Leakage_Splits_Annotation.ipynb) | [Run 02 results index](Notebook%202/results/run_20261018T050513552430Z_afc0e8ab/RESULTS_INDEX.md) | [Kaggle Phase 02](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase02-kaggle-archivecarrier-recover) | FULL technical audit completed; PROVISIONAL / BLOCKED |
 | 03 | [Notebook 3](Notebook%203/CrackSAFE_CP_Phase03_Legacy_Modern_Baselines.ipynb) | [SMOKE results](Notebook%203/results/run_20261104T061629907173Z_68452d4f/RESULTS_INDEX.md) | [Kaggle Phase 03](https://www.kaggle.com/code/abarman79/cracksafe-cp-phase03-legacy-modern-baselines) | SMOKE PASS; real training BLOCKED |
-| 04–08 | Planned | No results | — | Follow v3.3 gates |
+| 04â€“08 | Planned | No results | â€” | Follow v3.3 gates |
 
 *Kaggle URLs were provided by the project owner; their currently displayed versions were not externally accessible during this audit. These GitHub results correspond to the cryptographically verified archived runs listed below.*
 
 **Phase-03 note:** Kaggle SMOKE run `20261104T061629907173Z_68452d4f` verified Phase-01/02 inputs, passed 22 synthetic engineering tests, and exported verified outputs. No real model training, empirical accuracy, ensemble selection or risk certification was performed.
+
+## Phase-02 remediation update — 4 November 2026
+
+Read the [Phase-02 Remediation Progress](Notebook%202/docs/PHASE02_REMEDIATION_PROGRESS_2026-11-04.md) for the latest dataset investigation, unresolved scientific requirements and training-readiness status.
 
 ## What has actually been demonstrated
 
