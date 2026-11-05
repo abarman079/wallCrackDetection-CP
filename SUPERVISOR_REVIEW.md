@@ -39,3 +39,21 @@ The individual public results are copies or sanitized derivatives of immutable o
 ## Data protection, reproduction, and rights
 
 The source datasets and complete per-image audits contain raw or potentially restricted research materials. The repository intentionally omits raw crack images, masks, full private audit ZIPs, reviewer identities, sample-level lineage and duplicate registries, held-out roles and labels, and model checkpoints. These remain in versioned controlled Kaggle storage; evidence is available to authorized reviewers subject to dataset licenses. No data-rights approval is implied by GitHub visibility or Kaggle hosting. Use the [Phase-02 handoff](Notebook%202/NEXT_PHASE_INPUTS.md) for the next dependency and gating status.
+
+## Phase-02 critical data-feasibility update — 5 November 2026
+
+The current audit remains PROVISIONAL, with zero approved independent certification units.
+
+Recent private investigations established:
+- 537 technically aligned DeepCrack positive-mask candidates.
+- 1,042 combined DeepCrack records requiring mask-adapter/provenance review.
+- 2,908 empty-mask candidates, representing 1,377 unique decoded images.
+- 104 candidate wall-parent IDs among 2,822 filename-pattern matches.
+- An additional 10,519-image detection dataset with crack rectangle annotations, not verified crack-free segmentation ground truth.
+
+**Supervisor decisions requested under v3.3:**
+1. S2: Confirm the target population and acceptable independent acquisition unit.
+2. S6: Confirm expert annotation resources and approved original data sources.
+3. G03: Approve a prospective independent-negative acquisition plan, or review the blueprint's pre-calibration low-data contingency.
+
+No candidate counts constitute approved independent observations. Phase-03 FULL training remains blocked pending FINAL Phase-02 evidence and S5 authorization.
