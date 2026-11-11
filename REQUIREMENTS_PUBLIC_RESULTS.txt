@@ -1,0 +1,3 @@
+# Lightweight local helper only; all repository checks work with Python standard library.
+# The guarded results importer needs Pillow to remove image metadata before publication.
+Pillow>=10,<13

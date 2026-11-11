@@ -17,3 +17,8 @@
 **Scientific blockers:** original-source provenance, parent/site/session lineage, ambiguous masks, near-duplicate candidate caps, confirmed negatives, independent sampling and approvals. The report of one conservative group is not evidence of one actual photographic acquisition.
 
 **Data protection:** The full 44 MB private audit ZIP, detailed sample registries, curator/reviewer records, held-out labels and complete control archives are stored privately. Their local backups (if downloaded) are under ignored `../local_artifacts/`. Do not add these to GitHub. Do not start Phase-03 model training from PROVISIONAL partitions.
+
+
+## Source-safe V4 addendum (11 November 2026)
+
+The original audit record above is preserved. Later source-safe development preparation recovered 13,459 provisional candidates; the corrected split and 72-pair technical diagnostic are documented in [the Phase-02 handoff](docs/PHASE02_SOURCE_SAFE_DEVELOPMENT_HANDOFF_2026-11-11.md). V4 exploratory training uses 6,771/785 candidate pairs and does **not** change the scientific FINAL status.

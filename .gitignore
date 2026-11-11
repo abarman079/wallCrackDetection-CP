@@ -53,3 +53,25 @@ Notebook 2/*.zip.sha256
 # Workstation-only immutable run archives and private curator evidence
 /local_artifacts/
 *.zip.bin
+
+
+# CrackSAFE public-research admission guardrails (2026-11-11)
+# The existing audited public CSV/JSON/PNG files remain trackable.
+/local_artifacts/
+/private_data/
+/private_results/
+/staging/
+/public_exports_unreviewed/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.log
+*PRIVATE*
+*private*.zip

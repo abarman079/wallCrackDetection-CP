@@ -1,0 +1,22 @@
+{
+  "original_v4_sha256": "805ff45af895b1a728407f53921b969c0be66be3d521af85274849b73533d8d2",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "engines": [
+    "unetpp_effb3",
+    "segformer_b0",
+    "unetpp_convnext_tiny"
+  ],
+  "training": 6771,
+  "development": 785,
+  "pending_risk_gates": [
+    "G02",
+    "G03",
+    "S2",
+    "S6",
+    "S5"
+  ]
+}

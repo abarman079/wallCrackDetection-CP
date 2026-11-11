@@ -57,3 +57,8 @@ Recent private investigations established:
 3. G03: Approve a prospective independent-negative acquisition plan, or review the blueprint's pre-calibration low-data contingency.
 
 No candidate counts constitute approved independent observations. Phase-03 FULL training remains blocked pending FINAL Phase-02 evidence and S5 authorization.
+
+
+## Current-status addendum (11 November 2026)
+
+The original Phase-03 SMOKE evaluation remains a historical technical test. Separately, real development-only V4 training has **started** for U-Net++ EfficientNet-B3, SegFormer-B0 and adapted U-Net++ ConvNeXt-Tiny (seeds 42, 123 and 2026; early job launches confirmed, nine-job completion not yet verified). The V4 source-safe cohort is 6,771 training / 785 development candidates; it is **provisional and not independent-unit certified**. See [the current research status](docs/RESEARCH_STATUS.md) and [experiment register](docs/EXPERIMENT_REGISTER.md). Original G02/G03 and official Phase-03 FULL gates remain unresolved.

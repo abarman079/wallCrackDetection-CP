@@ -1,0 +1,21 @@
+name: Public repository checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-public-evidence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate public artifacts and notebook structure
+        run: python scripts/check_public_repo.py --ci
+      - name: Check committed results catalog is reproducible
+        run: python scripts/build_public_results_index.py --check
